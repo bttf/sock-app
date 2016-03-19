@@ -34,7 +34,7 @@ app.use('/users', users);
 app.use('/search', passport.authenticate('bearer', { session: false }), search);
 
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
+  var err = new Error('Not Found bro');
   err.status = 404;
   next(err);
 });
