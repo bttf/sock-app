@@ -1,0 +1,8 @@
+{{main-input saveBm='saveBm' search='search' resetBms='resetBms' bm=newBookmark isSaving=bmIsSaving}}
+
+{{#each bookmarks as |bookmark|}}
+  {{#unless bookmark.isNew}}
+    {{bookmark-listing bookmark=bookmark delete='deleteBm'}}
+  {{/unless}}
+{{/each}}
+

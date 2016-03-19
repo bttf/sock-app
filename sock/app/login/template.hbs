@@ -1,0 +1,45 @@
+<div class="login-header">
+  <h1>Keep your bookmarks safe and in one place with <strong>sock</strong></h1>
+</div>
+
+<div class="row login-bullets">
+  <div class="col-md-6">
+
+    <div class="bullet">
+      <div class="lock-icon">
+        {{fa-icon 'lock'}}
+      </div>
+      <div class="lock-desc">
+        All your data is <strong>encrypted</strong> and stored safely away from any sort of advertising or marketing use. Simply put, we don't care about your data, and we aim to keep yours <strong>private</strong>.
+      </div>
+    </div>
+
+    <div class="bullet">
+      <div class="users-icon">
+        {{fa-icon 'users'}}
+      </div>
+      <div class="users-desc">
+        Invite your friends to become members and share your bookmarks with them. Manage visibilty on which bookmarks or bookmark groups you'd like to share with friends and even friends-of-friends.
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-6">
+
+    <div class="login-form">
+      <h3>Sign up for <strong>free</strong></h3>
+      <form>
+        {{input id="loginEmail" class="form-control" type="text" placeholder="E-mail" value=formEmail}}
+        {{input id="loginPassword" class="form-control" type="password" placeholder="Password" value=formPassword}}
+        {{input id="loginConfirm" class="form-control" type="password" placeholder="Confirm Password" value=formConfirm}}
+        <button class="btn btn-default" type="submit" {{action 'signUp' formEmail formPassword formConfirm}}>Submit</button>
+        {{#if passwordMismatch}}
+          <div class="text-danger">
+            Passwords do not match.
+          </div>
+        {{/if}}
+      </form>
+    </div>
+
+  </div>
+</div>
