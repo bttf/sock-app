@@ -2,9 +2,7 @@
 
 sock's RESTful API
 
-built on node + express + elasticsearch.js
-
-currently expects an elasticsearch instance running at 'localhost:9200'
+built on node + express + mongoose + elasticsearch.js
 
 ## Steps
 
