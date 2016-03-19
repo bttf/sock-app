@@ -1,0 +1,18 @@
+{
+  "settings": {
+    "index": {
+      "number_of_shards": 1,
+      "number_of_replicas": 0
+    }
+  },
+  "mappings": {
+    "bookmarks": {
+      "properties": {
+        "user": {
+          "type":"string",
+          "index":"not_analyzed"
+        }
+      }
+    }
+  }
+}
