@@ -18,7 +18,7 @@ export default Ember.Component.extend({
           this.sendAction('search', this.get('bm.url'));
         } else if (!len) {
           this.sendAction('resetBms');
-        } 
+        }
       }
     }
   }
